@@ -49,11 +49,11 @@ bazel_skylib_workspace()
 # OpenFst: See
 #    http://www.openfst.org/twiki/pub/FST/FstDownload/README
 # -------------------------------------------------------------------------
-openfst_version = "1.8.1"
+openfst_version = "1.8.2p2"
 
 http_archive(
     name = "org_openfst",
     urls = ["https://github.com/anand-nv/openfst/archive/refs/tags/v%s.tar.gz" % openfst_version],
-    sha256 = "eefa2eca3504a38a1dc87a16d43bdb609d0d41d938f09268125e76cce0488988",
+    sha256 = "353eeb31f02ea8da3d038bb571494745ce77b4b1ff72f92b368744cc25b14bdb",
     strip_prefix = "openfst-%s" % openfst_version,
 )
